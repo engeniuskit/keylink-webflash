@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Install KeyLink V.1</title>
+<script type="module" src="https://unpkg.com/esp-web-tools@10/dist/web/install-button.js?module"></script>
+<style>
+  body{font-family:"Segoe UI",Roboto,"Noto Sans Thai",Arial,sans-serif;max-width:560px;margin:40px auto;padding:0 16px;line-height:1.6}
+  esp-web-install-button{display:inline-block;margin:16px 0}
+  .note{color:#555;font-size:14px}
+</style>
+</head>
+<body>
+<h1>KeyLink V.1</h1>
+<p>Install the software on your KeyLink board.</p>
+<ol>
+  <li>Use Chrome or Edge on a computer.</li>
+  <li>Connect the board with a USB cable.</li>
+  <li>Press the Install button and choose the board's COM port.</li>
+</ol>
+<esp-web-install-button manifest="manifest.json">
+  <button slot="activate">Install KeyLink V.1</button>
+  <span slot="unsupported">This browser cannot install. Use Chrome or Edge on a computer.</span>
+  <span slot="not-allowed">Open this page over HTTPS.</span>
+</esp-web-install-button>
+<p class="note">If the board does not respond: hold BOOT, press RST once, release BOOT, then try again.
+The first install erases everything on the board, including saved rows and the Wi-Fi password.</p>
+</body>
+</html>
